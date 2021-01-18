@@ -2,8 +2,8 @@ const getButton = document.getElementById('get');
 
 getButton.addEventListener('click', event => {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://localhost:8081/', true);
-    // xhr.withCredentials = true; 
+    xhr.open('GET', 'https://112ff805688f.ngrok.io', true);
+    xhr.withCredentials = true;
     xhr.send(null);
 })
 

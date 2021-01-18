@@ -11,5 +11,9 @@ app.use("/public", express.static('./public/'));
 
 // ルーティング
 app.get("/", (req, res) => {
+    res.cookie('6-1', 'value1', {
+        httpOnly: true
+    });
+
     res.sendFile(__dirname + '/public/index1.html');
 });
